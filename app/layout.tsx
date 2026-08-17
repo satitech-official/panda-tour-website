@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import HeroVideo from "./HeroVideo";
 
 const title = "Panda Tours & Travels | Premium Kashmir Journeys";
 const description = "Tailor-made Kashmir holidays, honeymoon escapes, family tours and hidden-valley journeys crafted by local experts in Srinagar.";
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         {children}
+        <HeroVideo />
       </body>
     </html>
   );
